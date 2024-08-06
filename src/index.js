@@ -7,11 +7,13 @@ import Contact from './pages/Contact';
 import reportWebVitals from './reportWebVitals';
 import './assets/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <NotFound />,
   },
   {
     path: '/about',
